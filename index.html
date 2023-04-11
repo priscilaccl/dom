@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Index 3</title>
+    <meta name="description" content="whatever we want">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn {
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        #btn1 {
+            background-color: aqua;
+        }
+
+        div {
+            background-color: bisque;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="btn1" class="btn">Click me 1</div>
+    <div id="btn2" class="btn">Click me 2</div>
+    <script>
+       // window.addEventListener("load", function () {
+
+            console.dir(document);
+            var myOutput = document.getElementById("btn1");
+            console.dir(myOutput);
+            myOutput.innerText = "NEW<BR>BUTTON";
+
+            var myButtons = document.getElementsByClassName("btn");
+            console.dir(myButtons[1]);
+
+            var myTags = document.getElementsByTagName("div");
+            console.dir(myTags);
+
+        
+    </script>
+
+
+</body>
+
+</html>
